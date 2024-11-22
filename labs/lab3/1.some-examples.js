@@ -93,3 +93,32 @@ let x1 = 42;
 let numType = x1%2===0 ? "even" : "odd";
 
 console.log(numType); // "even"
+
+console.log('************\n');
+// half tree print
+var treeDeep = 5;
+for(var i = 1; i<=treeDeep; i++){
+    console.log("*".repeat(i));
+}
+
+console.log('************\n');
+
+// full tree print
+var crownHeight = 6;
+var boleHeight = 2;
+var boleWidth = 3;
+var spaceCount;
+
+
+// print the crown:
+for(var i = 1; i<=crownHeight; i++){
+    spaceCount = Math.floor(crownHeight) - i;
+    console.log( "*".repeat(spaceCount)+"*".repeat(i*2-1) );		
+}
+
+// print the bole:	
+spaceCount = Math.floor(((crownHeight*2-1)-boleWidth)/2);
+for(var i = 1; i<=boleHeight; i++){		
+    console.log( "*".repeat(spaceCount)+"*".repeat(boleWidth));		
+}
+
