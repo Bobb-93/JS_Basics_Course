@@ -16,3 +16,14 @@ function sum(x, y){
 sum(8, 7);
 
 sum(2);
+
+console.log(`--------`);
+
+function sum(x){
+    // let x = 2;
+    console.log( x ); // 2
+    //console.log( x + y); // ReferenceError: y is not defined
+    // ако не използваме y във функцията, няма да има грешка.
+}
+
+sum(2, 3);
