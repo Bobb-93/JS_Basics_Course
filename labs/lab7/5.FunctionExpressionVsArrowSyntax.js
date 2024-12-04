@@ -8,4 +8,5 @@ let circleAreaExp = function(r){
 // arrow function syntax:
 let circleAreaArrow = r=>r*r*pi;
 
+console.log(circleAreaExp(4));
 console.log(circleAreaArrow(4));
