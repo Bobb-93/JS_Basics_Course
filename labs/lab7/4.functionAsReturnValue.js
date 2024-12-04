@@ -1,6 +1,6 @@
 function foo(){
-    return function(){
-        console.log(`I'm the returned function`);
+    return function(b){
+        console.log(`I'm the returned function ${b}`);
     }
     //return 5;
 }
@@ -10,4 +10,4 @@ function foo(){
 
 // foo()() е концептуално еквивалентно на:
 var bar = foo();
-bar();
+bar(5);
