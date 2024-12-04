@@ -2,7 +2,9 @@ function foo(){
     return function(){
         console.log(`I'm the returned function`);
     }
+    //return 5;
 }
+
 
 // foo()();
 
