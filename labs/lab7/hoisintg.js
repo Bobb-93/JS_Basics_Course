@@ -1,15 +1,15 @@
-// console.log(x);
+console.log(x);
 
-// let x = 1;
+var x = 1;
 
-// console.log(x);
+console.log(x);
 
-// let foo = function () {
-//     console.log(`2`);
-//     let y = 1;
-// }
+let foo = function () {
+    console.log(`2`);
+    let y = 1;
+}
 
-// foo();
+foo();
 
 
 // RAM:
@@ -19,11 +19,11 @@
 
 
 
-// foo();
+foo2();
 
-// function foo() {
-//     console.log(`Foo`);
-// }
+function foo2() {
+    console.log(`Foo2`);
+}
 
 // //RAM:
 // foo: function foo
