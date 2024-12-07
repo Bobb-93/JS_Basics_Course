@@ -45,7 +45,39 @@ var car1 = {
     "doors" : 3
 }
 
+console.log('Dot notation!!!');
+
 var obj2 = new Object();
+console.log(obj2);
+console.log(obj2.youurMum);
+console.log(obj2);
+
 
 //var obj = new Car();
+
+const developer1 = {
+    "firstName" : "Ivan",
+    "surName"   : "Ivanov",
+    "skills"     : ["HTML", "CSS", "JavaScript"],
+
+    "applyForJob": function(){
+        const skillsStr = this.skills.toString();
+        console.log(`Hi, I'm ${this.firstName} ${this.surName}. My strongest skills are ${skillsStr}.`);
+    }
+}
+
+console.log( developer1.firstName ); //Ivan
+console.log( developer1.surName );   //Ivanov
+
+console.log( developer1.skills );
+// ["HTML", "CSS", "JavaScript"]
+
+console.log( developer1.skills[0] ); //"HTML"
+
+console.log( developer1.applyForJob() );
+// Ivan is applying for job!
+
+developer1.firstName = "Stoyan";
+// промяна на свойството "firstName"
+console.log(developer1);
 
