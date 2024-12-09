@@ -16,10 +16,10 @@ pesho.lastName = "petrov";
 
 // add method greet to each object:
 maria.greet = function(){
-	console.log(`Hello, I'm ${this.firstName}`);
+	console.log(`Hello, I'm ${this.firstName} ${this.lastName}`);
 }
 pesho.greet = function(){
-	console.log(`Hello, I'm ${this.firstName}`);
+	console.log(`Hello, I'm ${this.firstName} ${this.lastName}`);
 }
 
 
