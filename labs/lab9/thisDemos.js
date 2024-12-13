@@ -29,6 +29,7 @@ console.log('--------');
 
 obj3.showX();
 console.log('--------');
+
 obj3.bar();
 
 console.log('--------');
