@@ -10,9 +10,13 @@ function changeBGColor() {
 	divNode.style.backgroundColor = colors[i++ % colors.length];
     console.log(i);
     //console.log(`i++ % colors.length: ${i++ % colors.length}`);
-    
+    if(i === 10){
+        clearInterval(intervalID);
+    }
     
 }
 
-setInterval(changeBGColor, 1000);
+let intervalID = setInterval(changeBGColor, 1000);
 console.log(`After setTimeout()`);
+
+
