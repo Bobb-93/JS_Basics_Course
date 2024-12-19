@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">Paragraph <b>1</b>!</p>
+
+    <script type="text/javascript">
+        console.log("The Document node object:");
+        console.dir(document);
+
+        console.log(document.lastModified);
+
+        console.log(document.doctype);
+
+        // "взимаме" елемента с id="p1":
+        const p = document.getElementById('p1');
+        console.dir(p);
+
+        // "взимаме" всички обекти (от тип HTML element) деца на body:
+        const bodyChildren = document.body.children;
+        console.dir(bodyChildren);
+
+        // "взимаме" всички обекти (от всеки тип) деца на body:
+        const childNodes = document.body.childNodes;
+        console.dir(childNodes);
+
+    </script>
+</body>
+</html>
