@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<body>
+    <h1 id="h1" title="@@@@">Heading 1</h1>
+    <ul id="list">
+        <li>Li1</li>
+        <li>Li2</li>
+        <li>Li3</li>
+    </ul>
+    <img src="../images/miro.medium.com_v2_resize_fit_1358_1_xLq_hFKV_8-_Yrr9ZZBC5Q.jpeg.png" alt="">
+
+    <div id="test">
+        text1
+        <span>text2</span>
+        <!-- comment -->
+    </div>
+
+    <script>
+        // const test = document.querySelector('#test');
+        // console.dir(test.childNodes);
+        // console.dir(test.children);
+
+        const firstTextObj = test.childNodes[0];
+        console.dir(firstTextObj);
+
+        const secondTextObj = test.childNodes[1];
+        console.dir(secondTextObj);
+        firstTextObj.textContent = 'Hello ';
+        const ul = document.getElementById('list');
+        console.dir(ul.childNodes);
+
+        const li1 = ul.childNodes[0];
+        console.dir( li1.parentElement.parentElement );
+        //document.body.innerHTML='Hello'
+        console.log(document.lastModified); // Read
+        document.lastModified = 'Hello'; // Set
+        console.log(document.lastModified); // Read
+
+        const h1 = document.querySelector('#h1');
+        console.dir(h1.attributes);
+        h1.attributes[1].value = '!!!!!'
+
+        const img = document.querySelector('img');
+
+        // Change image
+        setTimeout(() => {
+            // img.attributes[0].value = 'https://picsum.photos/200'
+            img.src = 'https://picsum.photos/200';
+        }, 2000);
+
+    </script>
+</body>
+</html>
+<!--
+document ={
+    body:{
+        innerHTML:{}
+    }
+    elements = {
+        'h1':{
+            id:h11,
+            attributes:[
+                id: 1
+            ],
+            content:'Heading 1',
+            text:{
+
+            }
+        }
+    }
+} -->
