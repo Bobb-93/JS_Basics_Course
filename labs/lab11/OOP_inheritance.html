@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP_inheritance </title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name) {
+                this.fingers = 10;
+                this.name = name
+            }
+        }
+
+        class Student{
+            constructor(name, score){
+                // super(name);
+                this.name = name
+                this.score = score;
+                this.address = {
+                    town:'Sofia',
+                    showAddress:function(){
+                        console.log(`The addres is: ${this.town}`);
+                    }
+                }
+
+            }
+            greet(){
+                console.log(`Hello, I'm ${this.name}!`);
+            }
+            goToExam(){
+                console.log(`Going to exam`);
+            }
+        }
+
+        const pesho = new Student('Pesho', 5);
+        const maria = new Student('Maria', 4);
+
+
+        console.dir(pesho);
+        console.dir(maria);
+
+
+        console.dir(pesho.address);
+        const address = pesho.address;
+        console.dir(address);
+
+    </script>
+</body>
+</html>
