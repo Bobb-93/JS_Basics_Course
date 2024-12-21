@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">Paragraph <b>1</b>!</p>
+
+    <script type="text/javascript">
+        // "взимаме" обекта представящ p елемента:
+        const p = document.getElementById('p1');
+
+        // нека видим колко обекта-деца има в параграфа:
+        console.dir(p.childNodes);
+
+        // NodeList(3)
+        // 0: text
+        // 1: b
+        // 2: text
+
+        // нека достъпим и логнем обекта, представящ текста "Paragraph ":
+        const textNode = p.childNodes[0];
+        console.dir(textNode);
+    </script>
+</body>
+
+</html>
