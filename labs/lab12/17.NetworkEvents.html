@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Toggle your internet connection to see the "online"/"offline" events in action...</h1>
+
+    <script>
+        window.addEventListener('offline', function (e) {
+            alert("Upps, I've lost the connection!")
+        });
+
+        window.addEventListener('online', function (e) {
+            alert("CONNECTED!!!")
+        });
+    </script>
+</body>
+
+</html>
