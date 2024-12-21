@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="14.AutoListGenerator.css">
+</head>
+
+<body>
+
+    <section id="form_container">
+        <h1>Автоматично създаване на списък:</h1>
+        <div>
+            <label>Брой на елементите на списъка: </label>
+            <input type="number" id="listItemsCount">
+        </div>
+        <div>
+            <label>Тип на списъка:</label>
+            <select id="listType">
+                <option value="ol" name="list_type">Ordered List</option>
+                <option value="ul" name="list_type">Unordered List</option>
+            </select>
+        </div>
+        <div>
+            <button onclick="createList();">Create List</button>
+        </div>
+    </section>
+    
+    <section id="resultContainer">
+        <h1>Резултат</h1>
+    </section>
+    <script src="14.AutoListGenerator.js"></script>
+</body>
+
+</html>
