@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>Header Item 1</li>
+        </ul>
+    </header>
+    <footer>
+        <ul>
+            <li>Footer Item 1</li>
+            <li>Footer Item 2</li>
+        </ul>
+    </footer>
+
+    <script>
+        const allFooterLiNodes = document.querySelectorAll('footer>ul>li');
+        for (let i = 0; i < allFooterLiNodes.length; i++) {
+            const li = allFooterLiNodes[i];
+            console.log(li.innerHTML);
+        }
+    </script>
+</body>
+
+</html>
