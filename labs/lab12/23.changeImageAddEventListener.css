@@ -1,0 +1,13 @@
+/* added in new version */
+.products{
+	border:5px solid red;
+}
+
+.product {
+	display: flex;
+	border: 1px solid #666;
+}
+
+.product-right {
+	padding-left: 1em;
+}
