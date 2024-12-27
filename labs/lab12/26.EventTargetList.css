@@ -1,0 +1,22 @@
+.player ul {
+	border: 1px solid red;
+	list-style-type: none;
+}
+.player ul li {
+	border: 1px solid blue;
+}
+.player ul > li:hover {
+	cursor: pointer;
+}
+
+.player ul li > i {
+	font-size: 0.8em;
+	margin-right: 0.5em;
+	color: #00ffdd;
+}
+.output {
+	display: block;
+	border: 2px groove #00ffdd;
+	padding: 0.5em;
+	text-align: center;
+}
