@@ -1,0 +1,33 @@
+.songs,
+.songs>li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.songs>li:before {
+  content: '\f04b';
+  font: 0.8em FontAwesome;
+  color: hsla(179, 50%, 50%, .5);
+  margin: 0 .5em 0 0;
+}
+
+.songs>li:hover {
+  cursor: pointer;
+  color: hsla(179, 70%, 50%, .5);
+}
+
+.songs>li:hover:before {
+  color: hsla(179, 100%, 50%, .5);
+}
+
+.status {
+  margin: 1em 0 0 0;
+  font-style: italic;
+}
+
+.status > span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hsla(179, 100%, 50%, .5);
+}
