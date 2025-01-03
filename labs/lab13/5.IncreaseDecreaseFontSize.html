@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase/decrease font-size</title>
+
+
+    <style>
+        .fontControls {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 0.2em 0.2em 0 0;
+        }
+
+        /* Negative index counts back from the end of the array */
+        /* p{
+            font-size: 112px; 
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="fontControls">
+        <button onclick="increaseFont();">A+</button>
+        <button onclick="decreaseFont();">A-</button>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <script>
+        function increaseFont() {
+            pFontSize += 2;
+            pNode.style.fontSize = pFontSize + "px";
+        }
+
+        function decreaseFont() {
+            pFontSize -= 2;
+            pNode.style.fontSize = pFontSize + "px";
+
+            //no negative font-size:
+            if (pFontSize < 0) {
+                pFontSize = 0;
+            }
+        }
+
+        // get p element object
+        const pNode = document.querySelector("p");
+
+        // get inital paragraph's font-size value:
+        let pFontSize = window.getComputedStyle(pNode).fontSize;
+        console.log(`pFontSize: ${pFontSize}`);
+
+        // remove the "px" from string and convert to number:
+        pFontSize = pFontSize.slice(0, -2) * 1;
+        console.log(`pFontSize: ${pFontSize}`);
+        
+
+    </script>
+</body>
+
+</html>
