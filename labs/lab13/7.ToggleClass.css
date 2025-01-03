@@ -1,0 +1,17 @@
+section>h2 {
+    padding: 0.5em 0;
+    background-color: #676;
+}
+
+section>h2:hover {
+    cursor: pointer;
+}
+
+section>article {
+    display: none;
+}
+
+/* this class will be set/unset by JS on respective elements  */
+.visible {
+    display: block;
+}
