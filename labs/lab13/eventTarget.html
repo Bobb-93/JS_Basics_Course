@@ -25,7 +25,7 @@
 
         body.addEventListener('click', (e)=>{
             console.log(`Body was clicked`);
-            console.dir(e.target);//btn
+            console.dir(e.target);//btn - the element that fired the event
             console.dir(e.currentTarget);//body - the x.addEventListener thingy
             console.dir(this)//global===window
         } , true)
