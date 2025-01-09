@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css"></script>
+    
+    
+
+</head>
+
+<body>
+    <!-- Inclue:
+    // jQuery:
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js
+    // Data Tables js:
+    https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js
+    // Data Tables CSS:
+    https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css
+    -->
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <th>Име</th>
+                <th>Години</th>
+                <th>Длъжност</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Иван</td>
+                <td>32</td>
+                <td>Разработчик</td>
+            </tr>
+            <tr>
+                <td>Петя</td>
+                <td>28</td>
+                <td>Дизайнер</td>
+            </tr>
+            <tr>
+                <td>Георги</td>
+                <td>41</td>
+                <td>Мениджър</td>
+            </tr>
+            <tr>
+                <td>Петър</td>
+                <td>23</td>
+                <td>Разработчик</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            var table = $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>
