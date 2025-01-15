@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <input type="color">
+
+    <script>
+        function setCookie(name, value){
+            // to set Expire Time 5 minute after current time:
+            let now = new Date();
+            now.setMinutes( now.getMinutes() + 5 );
+
+            // set a cooke:
+            document.cookie = `${name}=${value}; Expires=${now.toGMTString()}; Path=/`
+        }
+
+        function parseCookie(){
+            // document.cookie = 'color=#ff0000'
+            let parsedCookes = document.cookie.split('=');
+            let obj = {};
+            console.dir(parsedCookes);
+            obj[parsedCookes[0]] = parsedCookes[1]
+
+            return obj;
+        }
+
+
+        const colorInput = document.querySelector('input')
+        let color;
+        colorInput.addEventListener('change', (e)=>{
+            color = colorInput.value;
+            console.log(`color: ${color}`);
+            setCookie('color', color);
+        })
+
+
+        const cookies = parseCookie();
+        console.dir(cookies);
+        if(cookies['color']){
+            document.body.style.backgroundColor = cookies['color']
+        }
+    </script>
+</body>
+</html>
