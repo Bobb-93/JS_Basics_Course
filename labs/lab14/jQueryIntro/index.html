@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery intro</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <button>Click</button>
+    <button>Click 2</button>
+    <div class="output"></div>
+
+    <script>
+        // <!-- ------------------------- Varaint with jQuery ------------------------- -->
+        console.dir(jQuery===$);
+        let count = 1;
+
+        $(
+            ()=>{
+                const dom = {
+                    button: $('button'),
+                    output: $('.output'),
+                };
+
+                dom.output.text(count);
+                dom.button.click((e)=>{
+                    count++;
+                    dom.output.text(count);
+                })
+            }
+        )
+
+
+        // <!-- -------------------------- Variant with DOM --------------------------- -->
+        // // Cache dom
+        // const dom = {
+        //     button: document.querySelector('button'),
+        //     output: document.querySelector('.output'),
+        // }
+
+        // let count = 1;
+        // dom.output.innerHTML = count;
+
+        // dom.button.addEventListener('click', (e)=>{
+        //     count++;
+        //     dom.output.innerHTML = count;
+        // })
+    </script>
+</body>
+</html>
