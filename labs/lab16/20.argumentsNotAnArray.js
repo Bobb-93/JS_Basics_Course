@@ -1,5 +1,7 @@
 function demoArguments() {
     console.log(arguments.map); // undefined (not a true array)
+    console.log(arguments[0]);
+    
   }
   demoArguments(1, 2, 3);
   
