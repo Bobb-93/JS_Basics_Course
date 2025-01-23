@@ -1,9 +1,11 @@
 /* -------------------------------- for .. of ------------------------------- */
-// let arr = [1,2,3];
+let arr = [1,2,3];
 
-// for (let number of arr) {
-//     console.log(number);
-// }
+for (let number of arr) {
+    console.log(number);
+}
+
+console.log("for...in");
 
 /* -------------------------------- for ..in -------------------------------- */
 let obj = {
