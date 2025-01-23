@@ -17,4 +17,3 @@ let obj = {
 for (let prop in obj) {
     console.log(obj[prop]);
 }
-
