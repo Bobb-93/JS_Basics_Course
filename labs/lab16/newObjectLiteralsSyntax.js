@@ -10,7 +10,7 @@
 // // }
 
 // // after ES6
-// let userData = {userName, userAge};
+// // let userData = {userName, userAge};
 // console.log(userData);
 
 /* --------------------------- Method definitions --------------------------- */
@@ -23,10 +23,13 @@
 // }
 
 // after ES6
-let p1 = {
-    name: 'Pesho',
-    greet(){
-        console.log(`Hi, I'm ${this.name}`);
-    }
-}
+// let p1 = {
+//     name: 'Pesho',
+//     greet(){
+//         console.log(`Hi, I'm ${this.name}`);
+//     }
+// }
+
+console.log(p1);
+
 
