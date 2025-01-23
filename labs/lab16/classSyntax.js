@@ -53,10 +53,10 @@ Person.count = 0;
 let pesho = new Person('Petar', 23);
 let maria = new Person('Maria', 30);
 
-pesho.name = 'Anonmous';  //pesho.name('Anonymous')
+// pesho.name = 'Anonmous';  //pesho.name('Anonymous')
 console.log(pesho.name);  //pesho.name()
 
 pesho.greet();
 maria.greet();
 
-// console.log(Person.count);
+console.log(Person.count);
