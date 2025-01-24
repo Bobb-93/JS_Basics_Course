@@ -169,38 +169,39 @@ const min = numbers.reduce( (a,c)=>a>c?c:a )
 
 console.log(min);// 1
 
+console.log('forEach');
 
 /* ----------------------------- array.forEach() ---------------------------- */
-// const numbers = [1,2,3];
-// for (let index = 0; index < numbers.length; index++) {
-//     const element = numbers[index];
-//     console.log(element);
-// }
-// for(const el of numbers){
-//     console.log(el);
-// }
+const numbers2 = [1,2,3];
+for (let index = 0; index < numbers2.length; index++) {
+    const element = numbers2[index];
+    console.log(element);
+}
+for(const el of numbers2){
+    console.log(el);
+}
 
-// const cars = [
-//     {
-//         color:'red',
-//         speed:100
-//     },
-//     {
-//         color:'green',
-//         speed:120
-//     },
-//     {
-//         color:'blue',
-//         speed:140
-//     },
-// ];
+const cars = [
+    {
+        color:'red',
+        speed:100
+    },
+    {
+        color:'green',
+        speed:120
+    },
+    {
+        color:'blue',
+        speed:140
+    },
+];
 
-// cars.forEach((car, idx)=>console.log(`Car ${idx+1}: ${car.speed}`));
+cars.forEach((car, idx)=>console.log(`Car ${idx+1}: ${car.speed}`));
 
-// let carCounter = 1;
-// for(const car of cars){
-//     console.log(`Car ${carCounter++}: ${car.speed}`);
-// }
+let carCounter = 1;
+for(const car of cars){
+    console.log(`Car ${carCounter++}: ${car.speed}`);
+}
 
 // //TASK: calculate the total sales from an array of sales objects using the forEach method
 
