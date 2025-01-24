@@ -14,4 +14,4 @@ console.log(cityNames);
 // OUTPUT:
 // [ 'Sofia', 'Plovdiv', 'Burgas', 'Varna' ]
 
-//Advanced example in mapFilterReduce.js
+//Advanced example in mapFilterReduce.js -> line 28
