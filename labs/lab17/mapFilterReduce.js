@@ -38,7 +38,7 @@ const cityNames = cities.map( (city, idx)=>city.name.toUpperCase() + '-' + (idx+
 console.log(cityNames);
 
 // // EXPECTED OUTPUT:
-// [ , 'PLOVDIV-2', 'BURGAS-3', 'VARNA-4' ]
+// [ 'SOFIA-1', 'PLOVDIV-2', 'BURGAS-3', 'VARNA-4' ]
 
 
 // TASK: from 'cities' array generate a new array 'bgCityNames' which will contain only the names
