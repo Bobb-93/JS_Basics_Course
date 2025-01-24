@@ -24,20 +24,20 @@ const output2 = input2.map( el=>el**2 );
 console.log(output2); //[1,4,9]
 
 // TASK: from 'cities' array generate a new array 'cityNames' which will contain only the names of the cities
-// let cities = [
-//     {name: 'Sofia', population: 1_236_000},
-//     {name: 'Plovdiv', population: 343_424 },
-//     {name: 'Burgas', population: 202_766},
-//     {name: 'Varna', population: 335_177},
-// ];
+let cities = [
+    {name: 'Sofia', population: 1_236_000},
+    {name: 'Plovdiv', population: 343_424 },
+    {name: 'Burgas', population: 202_766},
+    {name: 'Varna', population: 335_177},
+];
 
-// // YOUR CODE HERE:
-// const cityNames = cities.map( (city, idx)=>city.name.toUpperCase() + '-' + (idx+1) );
+// YOUR CODE HERE:
+const cityNames = cities.map( (city, idx)=>city.name.toUpperCase() + '-' + (idx+1) );
 
-// // TEST:
-// console.log(cityNames);
+// TEST:
+console.log(cityNames);
 
-// EXPECTED OUTPUT:
+// // EXPECTED OUTPUT:
 // [ , 'PLOVDIV-2', 'BURGAS-3', 'VARNA-4' ]
 
 
