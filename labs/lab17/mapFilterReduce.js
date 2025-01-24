@@ -98,9 +98,6 @@ console.log(populatedCities);
 // // 	{ name: 'Plovdiv', population: 343424 }
 // // ]
 
-
-
-
 // // TASK: if population>340_000, get city name in ciryllic
 const cities3 = [
     {name: 'Sofia', population: 1_236_000},
@@ -124,27 +121,32 @@ const biggestCityNamesCyrillic = cities
 
 console.log( biggestCityNamesCyrillic ); //['София', 'Пловдив']
 
+console.log('reduce');
+
 /* ----------------------------- array.reduce() ----------------------------- */
-// const output = [1,2,3].filter( el=>{} )
+const output4 = [1,2,3].filter( el=>{} );
+console.log(output4);
 
-// const value =  [1,2,3].reduce( (a,c)=>1, 0);
-// console.log(value);
-// // a=0, c=1 => 1
-// // a=1, c=2 => 1
-// // a=1, c=3 => 1
+const value1 =  [1,2,3].reduce( (a,c)=>1, 0);
+console.log(value1);
+// a=0, c=1 => 1
+// a=1, c=2 => 1
+// a=1, c=3 => 1
 
 
-// const value =  [1,2,3].reduce( (a,c)=>1);
-// console.log(value);
-// // a=1, c=2 => 1
-// // a=1, c=3 => 1
+const value2 =  [1,2,3].reduce( (a,c)=>1);
+console.log(value2);
+// a=1, c=2 => 1
+// a=1, c=3 => 1
 
-// const value = [1,2,3].reduce( (a,c,idx)=>console.log(a,c,idx) );
-// console.log(`value=${value}`);
+console.log('reduce logs...');
 
-//a=1,c=2,idx=1
-//a=undef, c=3, idx=2
-//values=undefined
+const value3 = [1,2,3].reduce( (a,c,idx)=>console.log(a,c,idx) );
+console.log(`value3=${value3}`);
+
+// // a=1,c=2,idx=1
+// // a=undef, c=3, idx=2
+// // values=undefined
 
 
 // const numbers = [1,2,3,4,5];
