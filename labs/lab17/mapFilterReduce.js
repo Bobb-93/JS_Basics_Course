@@ -70,10 +70,12 @@ console.log(bgCityNames);
 // EXPECTED OUTPUT:
 // [ 'София', 'Пловдив', 'Бургас', 'Варна' ]
 
+console.log('Filter:');
+
 /* ----------------------------- array.filter() ----------------------------- */
-// const input = [1,2,3,4,5];
-// const output = input.filter( el=>el%2===0 )
-// console.log( output );// [2,4]
+const input1 = [1,2,3,4,5];
+const output3 = input1.filter( el=>el%2===0 )
+console.log( output3 );// [2,4]
 
 
 // // TASK: filter only cities which population is greater than 340_000
