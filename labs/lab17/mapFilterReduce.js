@@ -246,35 +246,37 @@ users.forEach( user=> user.isAdmin = user.role==="admin" )
 console.log(users);
 
 // // EXPECTED OUTPUT:
-[
-    { name: 'Maria', role: 'user', isAdmin: false },
-    { name: 'Ivan', role: 'admin', isAdmin: true },
-    { name: 'Stoyan', role: 'user', isAdmin: false }
-]
+// // [
+// //     { name: 'Maria', role: 'user', isAdmin: false },
+// //     { name: 'Ivan', role: 'admin', isAdmin: true },
+// //     { name: 'Stoyan', role: 'user', isAdmin: false }
+// // ]
+
+console.log('find');
 
 /* ------------------------------ array.find() ------------------------------ */
-// const input = [1,2,3,5,4,5];
+const input4 = [1,2,3,5,4,5];
 
-// const userInput = 3;
-// console.log( input.find(el=> el>userInput) );
+const userInput = 3;
+console.log( input4.find(el=> el>userInput) );
 
 
-// TASK: Find the first city with a population greater than 500,000
-// const cities = [
-//     {name: 'Sofia', population: 1_236_000},
-//     {name: 'Plovdiv', population: 343_424},
-//     {name: 'Burgas', population: 202_766},
-//     {name: 'Varna', population: 335_177},
-// ];
+// // TASK: Find the first city with a population greater than 500,000
+const cities4 = [
+    {name: 'Plovdiv', population: 343_424},
+    {name: 'Burgas', population: 202_766},
+    {name: 'Sofia', population: 1_236_000},
+    {name: 'Varna', population: 335_177},
+];
 
-// // YOUR CODE HERE:
-// const firstLargeCityName = cities.find( city=>city.population>500_000 ).name;
+// YOUR CODE HERE:
+const firstLargeCityName = cities.find( city=>city.population>500_000 ).name;
 
-// // TEST:
-// console.log(firstLargeCityName);
+// TEST:
+console.log(firstLargeCityName);
 
-// // EXPECTED OUTPUT:
-// // { name: 'Sofia', population: 1236000 }
+// EXPECTED OUTPUT:
+// { name: 'Sofia', population: 1236000 }
 
 
 /* ------------------------------ array.sort() ------------------------------ */
@@ -316,14 +318,3 @@ console.log(users);
 //   { name: 'Varna', population: 335177 },
 //   { name: 'Burgas', population: 202766 }
 // ]
-
-
-
-
-
-
-
-
-
-
-
