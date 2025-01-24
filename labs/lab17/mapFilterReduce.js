@@ -102,27 +102,27 @@ console.log(populatedCities);
 
 
 // // TASK: if population>340_000, get city name in ciryllic
-// const cities = [
-//     {name: 'Sofia', population: 1_236_000},
-//     {name: 'Plovdiv', population: 343_424 },
-//     {name: 'Burgas', population: 202_766},
-//     {name: 'Varna', population: 335_177},
-// ];
+const cities3 = [
+    {name: 'Sofia', population: 1_236_000},
+    {name: 'Plovdiv', population: 343_424 },
+    {name: 'Burgas', population: 202_766},
+    {name: 'Varna', population: 335_177},
+];
 
 
-// let dict = {
-//     'Sofia' : 'София',
-//     'Plovdiv' : 'Пловдив',
-//     'Burgas' : 'Бургас',
-//     'Varna' : 'Варна'
-// };
+let dict1 = {
+    'Sofia' : 'София',
+    'Plovdiv' : 'Пловдив',
+    'Burgas' : 'Бургас',
+    'Varna' : 'Варна'
+};
 
-// const biggestCityNamesCyrillic = cities
-//     .filter(city=>city.population>340_000)
-//     .map(city=>dict[city.name])
+const biggestCityNamesCyrillic = cities
+    .filter(city=>city.population>340_000)
+    .map(city=>dict[city.name]);
 
 
-// console.log( biggestCityNamesCyrillic ); //['София', 'Пловдив']
+console.log( biggestCityNamesCyrillic ); //['София', 'Пловдив']
 
 /* ----------------------------- array.reduce() ----------------------------- */
 // const output = [1,2,3].filter( el=>{} )
