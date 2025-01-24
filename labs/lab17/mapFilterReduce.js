@@ -133,7 +133,6 @@ console.log(value1);
 // a=1, c=2 => 1
 // a=1, c=3 => 1
 
-
 const value2 =  [1,2,3].reduce( (a,c)=>1);
 console.log(value2);
 // a=1, c=2 => 1
@@ -149,26 +148,26 @@ console.log(`value3=${value3}`);
 // // values=undefined
 
 
-// const numbers = [1,2,3,4,5];
-// const sum1 = numbers.reduce( (a,c)=>a+c);
-// const sum2 = numbers.reduce( (a,c)=>a+c, 10);
-// console.log(sum1);
-// console.log(sum2);
+const numbers1 = [1,2,3,4,5];
+const sum1 = numbers1.reduce( (a,c)=>a+c);
+const sum2 = numbers1.reduce( (a,c)=>a+c, 10);
+console.log(sum1);
+console.log(sum2);
 
-// let input = [1,2,3,4];
+let input3 = [1,2,3,4];
 
-// let output = input.filter(el=>el%2===0).reduce((a,c)=>a+c)
+let output5 = input3.filter(el=>el%2===0).reduce((a,c)=>a+c)
 
-// console.log(`output: ${output}`);
+console.log(`output5: ${output5}`);
 
 
-// // TASK: reduce numbers to min element
-// const numbers = [3,2,1,4,5];
+// TASK: reduce numbers to min element
+const numbers = [3,2,1,4,5];
 
-// // const min = Math.min(...numbers);
-// const min = numbers.reduce( (a,c)=>a>c?c:a )
+// const min = Math.min(...numbers);
+const min = numbers.reduce( (a,c)=>a>c?c:a )
 
-// console.log(min);// 1
+console.log(min);// 1
 
 
 /* ----------------------------- array.forEach() ---------------------------- */
