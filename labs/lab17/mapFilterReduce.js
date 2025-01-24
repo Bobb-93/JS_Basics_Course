@@ -206,23 +206,24 @@ for(const car of cars){
 // //TASK: calculate the total sales from an array of sales objects using the forEach method
 
 // // GIVEN
-// const sales = [
-//     { product: 'Laptop', amount: 1000 },
-//     { product: 'Phone', amount: 500 },
-//     { product: 'Tablet', amount: 300 }
-// ];
+const sales = [
+    { product: 'Laptop', amount: 1000 },
+    { product: 'Phone', amount: 500 },
+    { product: 'Tablet', amount: 300 }
+];
 
-// // YOUR CODE HERE
-// // let totalSales = 0;
-// // sales.forEach( sale=>totalSales+=sale.amount );
+// YOUR CODE HERE
+let totalSales = 0;
+sales.forEach( sale=>totalSales+=sale.amount );
 
-// // const totalSales = sales.reduce((a,c)=>a+c.amount, 0);
+const totalSales1 = sales.reduce((a,c)=>a+c.amount, 0);
 
-// // TEST
-// console.log(totalSales);
+// TEST
+console.log(totalSales);
+console.log(totalSales1);
 
-// // EXPECTED OUTPUT:
-// // 1800
+// EXPECTED OUTPUT:
+// 1800
 
 
 
@@ -230,26 +231,26 @@ for(const car of cars){
 //Add an isAdmin property to each user object based on the user's role within the array of user objects.
 
 // GIVEN
-// const users = [
-//     { name: 'Maria', role: 'user' },
-//     { name: 'Ivan', role: 'admin' },
-//     { name: 'Stoyan', role: 'user' }
-// ];
+const users = [
+    { name: 'Maria', role: 'user' },
+    { name: 'Ivan', role: 'admin' },
+    { name: 'Stoyan', role: 'user' }
+];
 
-// YOUR CODE HERE
+// // YOUR CODE HERE
 // users.forEach( user=>user.role==='admin'? user.isAdmin=true : user.isAdmin=false  )
 
-// users.forEach( user=> user.isAdmin = user.role==="admin" )
+users.forEach( user=> user.isAdmin = user.role==="admin" )
 
-// // TEST
-// console.log(users);
+// TEST
+console.log(users);
 
-// EXPECTED OUTPUT:
-// [
-//     { name: 'Maria', role: 'user', isAdmin: false },
-//     { name: 'Ivan', role: 'admin', isAdmin: true },
-//     { name: 'Stoyan', role: 'user', isAdmin: false }
-// ]
+// // EXPECTED OUTPUT:
+[
+    { name: 'Maria', role: 'user', isAdmin: false },
+    { name: 'Ivan', role: 'admin', isAdmin: true },
+    { name: 'Stoyan', role: 'user', isAdmin: false }
+]
 
 /* ------------------------------ array.find() ------------------------------ */
 // const input = [1,2,3,5,4,5];
