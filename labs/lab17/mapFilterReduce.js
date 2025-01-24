@@ -1,25 +1,27 @@
 /* ------------------------------- array.map() ------------------------------ */
-// const input = ['a','b','c'];
-// // let output = [];
+const input = ['a','b','c'];
+let output = [];
 
-// // for(const el of input){
-// //     output.push(el.toUpperCase())
-// // }
+for(const el of input){
+    output.push(el.toUpperCase())
+}
 
-// const output = input.map( el=>el.toUpperCase())
+console.log(output); //['A','B','C']
 
-// console.log(output); //['A','B','C']
+const output1 = input.map( el=>el.toUpperCase())
 
-// console.log( [1,2,3].map( (el,idx)=>{
-//     console.log(el,idx);
-//     return 1
-// }) ); // [1,1,1]
+console.log(output1); //['A','B','C']
 
-// const input = [1,2,3];
+console.log( [1,2,3].map( (el,idx)=>{
+    console.log(el,idx);
+    return 1
+}) ); // [1,1,1]
 
-// const output = input.map( el=>el**2 );
+const input2 = [1,2,3];
 
-// console.log(output); //[1,4,9]
+const output2 = input2.map( el=>el**2 );
+
+console.log(output2); //[1,4,9]
 
 // TASK: from 'cities' array generate a new array 'cityNames' which will contain only the names of the cities
 // let cities = [
@@ -290,18 +292,18 @@
 
 
 // TASK: Sort the cities array in descending order of population
-const cities = [
-    {name: 'Plovdiv', population: 343_424},
-    {name: 'Burgas', population: 202_766},
-    {name: 'Varna', population: 335_177},
-    {name: 'Sofia', population: 1_236_000}
-];
+// const cities = [
+//     {name: 'Plovdiv', population: 343_424},
+//     {name: 'Burgas', population: 202_766},
+//     {name: 'Varna', population: 335_177},
+//     {name: 'Sofia', population: 1_236_000}
+// ];
 
-// YOUR CODE HERE:
-const sortedCities = [...cities].sort( (a,b)=>b.population - a.population )
+// // YOUR CODE HERE:
+// const sortedCities = [...cities].sort( (a,b)=>b.population - a.population )
 
-// TEST:
-console.log(sortedCities);
+// // TEST:
+// console.log(sortedCities);
 
 // EXPECTED OUTPUT:
 // [
