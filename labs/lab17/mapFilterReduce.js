@@ -304,18 +304,18 @@ console.log( [...numbers4].sort((a,b)=>{
 
 
 // TASK: Sort the cities array in descending order of population
-// const cities = [
-//     {name: 'Plovdiv', population: 343_424},
-//     {name: 'Burgas', population: 202_766},
-//     {name: 'Varna', population: 335_177},
-//     {name: 'Sofia', population: 1_236_000}
-// ];
+const cities5 = [
+    {name: 'Plovdiv', population: 343_424},
+    {name: 'Burgas', population: 202_766},
+    {name: 'Varna', population: 335_177},
+    {name: 'Sofia', population: 1_236_000}
+];
 
-// // YOUR CODE HERE:
-// const sortedCities = [...cities].sort( (a,b)=>b.population - a.population )
+// YOUR CODE HERE:
+const sortedCities = [...cities5].sort( (a,b)=>b.population - a.population )
 
-// // TEST:
-// console.log(sortedCities);
+// TEST:
+console.log(sortedCities);
 
 // EXPECTED OUTPUT:
 // [
