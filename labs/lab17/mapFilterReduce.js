@@ -278,22 +278,28 @@ console.log(firstLargeCityName);
 // EXPECTED OUTPUT:
 // { name: 'Sofia', population: 1236000 }
 
+console.log('sort');
+
 
 /* ------------------------------ array.sort() ------------------------------ */
-// const numbers = [13,12,7,3,1,5];
+const numbers3 = [13,12,7,3,1,5];
 
-// const output = [...numbers].sort();
+const output6 = [...numbers3].sort();
 
-// console.log(numbers);
-// console.log(output);
+console.log(numbers3);
+console.log('.........');
 
-// const numbers = [13,12,7,3,1,5];
-// // console.log( [...numbers].sort() );
-// console.log(numbers);
-// console.log( [...numbers].sort((a,b)=>{
-//     console.log(`a=${a},b=${b}`);
-//     return a-b
-// }) );
+console.log(output6);
+
+console.log('more sort');
+
+const numbers4 = [13,12,7,3,1,5];
+// console.log( [...numbers].sort() );
+console.log(numbers4);
+console.log( [...numbers4].sort((a,b)=>{
+    console.log(`a=${a},b=${b}`);
+    return a-b
+}) );
 
 
 
