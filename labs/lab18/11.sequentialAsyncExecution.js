@@ -15,16 +15,17 @@ async function add(x) {
 }
 
 function print(msg) {
+    // console.log("1"+msg);
     console.log(msg);
 }
 
-console.log(`1`);
-add(3)
-console.log(`2`);
+// console.log(`1`);
+// add(3)
+// console.log(`2`);
 
 /* ------------------------------ more insights ----------------------------- */
-// square(3).then(print)
+square(3).then(print)
 
-// square(3).then(n=>console.log(`n:${n}`))
+square(3).then(n=>console.log(`n:${n}`))
 
-// console.log(square(3));
+console.log(square(3));
