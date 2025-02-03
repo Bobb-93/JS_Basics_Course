@@ -1,0 +1,5 @@
+dinner = prepareDinner()
+ok = eatDinner(dinner)
+goToSleep()
+
+console.log(`Do something else`);
