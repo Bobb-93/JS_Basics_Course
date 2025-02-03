@@ -1,0 +1,3 @@
+URL = Unified Resource Locator
+URI = Unified Resource Identifier
+URI>URL
