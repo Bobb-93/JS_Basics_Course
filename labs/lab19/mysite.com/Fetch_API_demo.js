@@ -26,4 +26,11 @@ function render(todos) {
 }
 
 const todosContainer = document.querySelector('.todos');
-fetchData('/todos');
+// fetchData('/todos');//not working
+// fetchData('/todos.json');//not working
+// fetchData('./todos.json');//not working
+// fetchData('../todos.json');//not working
+
+
+fetchData('http://127.0.0.1:5500/labs/Lab19/mysite.com/data/todos.json');
+
