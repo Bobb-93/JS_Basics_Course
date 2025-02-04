@@ -29,7 +29,7 @@ function render(data) {
       <li>
           <span class="title">${todo.title}</span>
           <span>status</span>
-          <span>${todo.status?'completed':'not'}</span>
+          <span>${todo.completed?'completed':'not'}</span>
       </li>
     `
   })
@@ -42,7 +42,9 @@ function parseData(data){
     const todo = {}
     const todoData =row.split(';')
     todo.title = todoData[0];
-    todo.completed = todoData[1];
+    todo.completed = todoData[1].trim().toLowerCase() === "true";
+    // console.log(todo.completed);
+    
     todos.push(todo)
   })
 

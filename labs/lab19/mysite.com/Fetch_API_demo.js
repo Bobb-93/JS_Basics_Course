@@ -2,7 +2,8 @@ function fetchData(url){
     fetch(url)
         .then(response=>{
             if(response.ok){
-                return response.json()
+                return response.json(); // Return: A Promise that resolves to a JavaScript object
+                // return response.text(); //Return: promise that resolves with a String.
             }
         })
         .then(data=>{
@@ -14,6 +15,7 @@ function fetchData(url){
 
 
 function render(todos) {
+    // const todos = JSON.parse(data);
     todos.forEach(todo=>{
       todosContainer.innerHTML += `
         <li>
@@ -25,12 +27,13 @@ function render(todos) {
     })
 }
 
+// let arr = [1,2,3,];
+
 const todosContainer = document.querySelector('.todos');
 // fetchData('/todos');//not working
 // fetchData('/todos.json');//not working
 // fetchData('./todos.json');//not working
 // fetchData('../todos.json');//not working
-
 
 fetchData('http://127.0.0.1:5500/labs/Lab19/mysite.com/data/todos.json');
 
