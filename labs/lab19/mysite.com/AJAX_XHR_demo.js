@@ -8,7 +8,7 @@ function getDataXHR(url, callback) {
       console.log(`OK`);
       const data = xhr.responseText;
       console.log(`data: ${data}`);
-      callback(data)
+      callback(data);//is reder(data)
     } else if (xhr.readyState === 4) {
       console.error('Error:', xhr.statusText);
     }
@@ -20,7 +20,6 @@ function getDataXHR(url, callback) {
 
   xhr.send();
 }
-
 
 function render(data) {
   const todos = parseData(data);
@@ -52,4 +51,4 @@ function parseData(data){
 
 
 const todosContainer = document.querySelector('.todos');
-getDataXHR('http://127.0.0.1:41427/Lab19/mysite.com/data/todos.txt', render);
+getDataXHR('http://127.0.0.1:5500/labs/Lab19/mysite.com/data/todos.txt', render);
