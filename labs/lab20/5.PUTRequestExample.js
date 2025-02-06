@@ -1,12 +1,14 @@
-fetch('https://api.example.com/resource/1', {
+fetch('https://jsonplaceholder.typicode.com/posts/1', {
     method: 'PUT',
+    body: JSON.stringify({
+        title: 'Updated Post',
+        body: 'Updated content',
+        userId: 1,
+    }),
     headers: {
-        'Content-Type': 'application/json'
+        'Content-type': 'application/json; charset=UTF-8',
     },
-    body: JSON.stringify({ name: 'Updated Resource' })
 })
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
-
-//not working
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch(error => console.error('Error:', error));
