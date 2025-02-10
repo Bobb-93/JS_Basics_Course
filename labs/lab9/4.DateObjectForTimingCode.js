@@ -1,23 +1,24 @@
 // We have 2 functions doing a same task: calculate the sum of all positive even numbers in a given range. But the algorithm for each of them is different.
 function calcEvenNumbersSum_1(start, end) {
-	var sum = 0;
-	start = start % 2 ? start + 1 : start;//отиваме на четното число
+  var sum = 0;
+  start = start % 2 ? start + 1 : start; //отиваме на четното число
 
-	for (var i = start; i <= end; i += 2) {
-		sum += i;
-	}
-	console.log(`calcEvenNumbersSum_1 result is: ${sum}`);
+  for (var i = start; i <= end; i += 2) {
+    sum += i;
+  }
+  console.log(`calcEvenNumbersSum_1 result is: ${sum}`);
 }
 
 function calcEvenNumbersSum_2(start, end) {
-	var sum = 0;
+  var sum = 0;
 
-	for (var i = start; i <= end; i++) {
-		if (i % 2 == 0) {//проверяваме всяко число дали е четно
-			sum += i;
-		}
-	}
-	console.log(`calcEvenNumbersSum_2 result is: ${sum}`);
+  for (var i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+      //проверяваме всяко число дали е четно
+      sum += i;
+    }
+  }
+  console.log(`calcEvenNumbersSum_2 result is: ${sum}`);
 }
 
 // So lets compare which of the two functions is faster (NB! This test is very rough, and is not reliable for real-world algorithm speed tests.)

@@ -1,59 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>saveTodoData </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>saveTodoData</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+  </head>
+  <body>
     <ul class="task-list">
-        <li>
-            <span>title</span>
-            <span>done </span>
-        </li>
+      <li>
+        <span>title</span>
+        <span>done </span>
+      </li>
     </ul>
     <button class="save">Save data</button>
     <button class="load">Load data</button>
 
-
     <script>
-        function render() {
-            for (let i = 0; i < tasks.length; i++) {
-                const task = tasks[i];
-                dom.taskList.innerHTML+=`
+      function render() {
+        for (let i = 0; i < tasks.length; i++) {
+          const task = tasks[i];
+          dom.taskList.innerHTML += `
                     <li>
                         <span>${task.title}</span>
-                        <span>${task.completed?'Done':'Not done'}</span>
+                        <span>${task.completed ? "Done" : "Not done"}</span>
                     </li>
-                `
-            }
+                `;
         }
+      }
 
-        function loadTasks() {
-            return JSON.parse( window.localStorage.getItem('tasks') );
-        }
+      function loadTasks() {
+        return JSON.parse(window.localStorage.getItem("tasks"));
+      }
 
-        const tasks = loadTasks() || [];
+      const tasks = loadTasks() || [];
 
-        const dom = {
-            taskList: document.querySelector('.task-list'),
-            saveBtn: document.querySelector('.save'),
-            loadBtn: document.querySelector('.load'),
-        }
+      const dom = {
+        taskList: document.querySelector(".task-list"),
+        saveBtn: document.querySelector(".save"),
+        loadBtn: document.querySelector(".load"),
+      };
 
-        dom.saveBtn.addEventListener('click', (e)=>{
-            window.localStorage.setItem('tasks', JSON.stringify(tasks))
-        })
+      dom.saveBtn.addEventListener("click", (e) => {
+        window.localStorage.setItem("tasks", JSON.stringify(tasks));
+      });
 
-        dom.loadBtn.addEventListener('click', (e)=>{
+      dom.loadBtn.addEventListener("click", (e) => {
+        console.dir(data);
+      });
 
-            console.dir(data);
-        })
-
-        render();
-
-
+      render();
     </script>
-</body>
+  </body>
 </html>

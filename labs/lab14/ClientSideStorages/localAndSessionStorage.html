@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local and Session Storage</title>
-</head>
-<body>
-    <input type="color">
+  </head>
+  <body>
+    <input type="color" />
 
     <script>
-        window.localStorage.setItem('color', '#FF10000');
-        window.sessionStorage.setItem('id', 2);
+      window.localStorage.setItem("color", "#FF10000");
+      window.sessionStorage.setItem("id", 2);
 
-        console.log(`color  = ${window.localStorage.getItem('color')}`);
-        const id = window.sessionStorage.getItem('id');
-        console.log(`id + 1  = ${id+1}`);
+      console.log(`color  = ${window.localStorage.getItem("color")}`);
+      const id = window.sessionStorage.getItem("id");
+      console.log(`id + 1  = ${id + 1}`);
 
-        let arr = [1,2,3];
-        console.log(arr.toString());
-        window.localStorage.setItem('arr', arr);
-        window.localStorage.setItem('obj', JSON.stringify({id:1}));
+      let arr = [1, 2, 3];
+      console.log(arr.toString());
+      window.localStorage.setItem("arr", arr);
+      window.localStorage.setItem("obj", JSON.stringify({ id: 1 }));
 
-        let arr1 = window.localStorage.getItem('arr');
-        let obj = JSON.parse(window.localStorage.getItem('obj'));
-        console.log(arr1);
-        console.log(obj.id);
+      let arr1 = window.localStorage.getItem("arr");
+      let obj = JSON.parse(window.localStorage.getItem("obj"));
+      console.log(arr1);
+      console.log(obj.id);
     </script>
-</body>
+  </body>
 </html>

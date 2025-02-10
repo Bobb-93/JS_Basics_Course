@@ -1,6 +1,6 @@
-let input = ['a', 'b', 'c'];
+let input = ["a", "b", "c"];
 
-let output = input.map((e,i)=>e.toUpperCase()+i);
+let output = input.map((e, i) => e.toUpperCase() + i);
 
 console.log(output);
 

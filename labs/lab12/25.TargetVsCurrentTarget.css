@@ -1,27 +1,27 @@
 .outer {
-    width: 10em;
-    height: 10em;
+  width: 10em;
+  height: 10em;
 }
 
 .inner {
-    width: 5em;
-    height: 5em;
-    opacity: .5
+  width: 5em;
+  height: 5em;
+  opacity: 0.5;
 }
 
 .outer,
 .inner {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #red {
-    background: #f99;
+  background: #f99;
 }
 
 #blue {
-    background: #99f;
+  background: #99f;
 }
 
 #green {
-    background: #9f9;
+  background: #9f9;
 }

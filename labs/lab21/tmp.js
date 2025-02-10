@@ -18,7 +18,6 @@
 
 // console.log(newTodos );
 
-
 // [
 //     {
 //       "id": "bcbc",
@@ -48,24 +47,21 @@
 //     "completed": false
 // }
 
-
-
 const todoItems = [
-    {
-      "id": "bcbc",
-      "task": "Task1",
-      "completed": false
-    },
-    {
-      "id": "998f",
-      "task": "Task2",
-      "completed": true
-    }
+  {
+    id: "bcbc",
+    task: "Task1",
+    completed: false,
+  },
+  {
+    id: "998f",
+    task: "Task2",
+    completed: true,
+  },
 ];
 
-
-const idx = 'bcbc';
-const todo = todoItems.filter(todo=>todo.id===idx)[0]
+const idx = "bcbc";
+const todo = todoItems.filter((todo) => todo.id === idx)[0];
 
 console.log(todo);
 
@@ -74,4 +70,3 @@ console.log(todo);
 //     "task": "Task2",
 //     "completed": true
 // }
-

@@ -1,23 +1,24 @@
-let prepareDinner = new Promise((resolve,reject)=>{
-    setTimeout(() => {
-        // // prepare dinner
-        const success = false;
-        if(success){
-            resolve('pizza')
-        }else{
-            reject('The oven is broken');
-        }
-    }, 2000);
+let prepareDinner = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    // // prepare dinner
+    const success = false;
+    if (success) {
+      resolve("pizza");
+    } else {
+      reject("The oven is broken");
+    }
+  }, 2000);
 });
 
 prepareDinner
-    .then((dinner)=>{console.log(`Dinner is ready: ${dinner}`)})
-    .catch((e)=>{console.error(`Error: ${e}`)})
-
+  .then((dinner) => {
+    console.log(`Dinner is ready: ${dinner}`);
+  })
+  .catch((e) => {
+    console.error(`Error: ${e}`);
+  });
 
 console.log(`Do something ...`);
-
-
 
 // const fetch = (url)=>{
 //     return new Promise( (resolve,reject)=>{
@@ -38,9 +39,7 @@ console.log(`Do something ...`);
 //     .then((d)=>{console.log(`1: ${d}`)})
 //     .catch(e=>console.log(`ERROR: ${e}`));
 
-
 // console.log(`Do some other tasks...`);
-
 
 // // // Example EvenNumberPromise
 
@@ -53,14 +52,11 @@ console.log(`Do something ...`);
 //     }
 // });
 
-
 // evenNumberPromise
 //     .then(even=>console.log(even))
 //     .catch(e=>console.log(`ERROR: ${e}`));
 
-
 // console.log(`do other tasks`);
-
 
 // const sumPromise = new Promise((resolve, reject)=>{
 //     const hugeArr = Array.from( new Array(10_000_000), (_, idx)=>idx+1);
@@ -72,4 +68,3 @@ console.log(`Do something ...`);
 //     .then(sum=>console.log(`Sum: ${sum}`));
 
 // console.log(`Do other tasks.`);
-

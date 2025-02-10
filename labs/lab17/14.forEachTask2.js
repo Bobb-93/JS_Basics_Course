@@ -3,14 +3,14 @@
 
 // GIVEN
 const users = [
-    { name: 'Maria', role: 'user' },
-    { name: 'Ivan', role: 'admin' },
-    { name: 'Stoyan', role: 'user' }
+  { name: "Maria", role: "user" },
+  { name: "Ivan", role: "admin" },
+  { name: "Stoyan", role: "user" },
 ];
 
 // YOUR CODE HERE
-users.forEach(user => {
-    user.isAdmin = user.role === 'admin';
+users.forEach((user) => {
+  user.isAdmin = user.role === "admin";
 });
 
 // TEST

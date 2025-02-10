@@ -1,34 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            border: 5px solid #F00;
-        }
+      body {
+        border: 5px solid #f00;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <button class="btn-ok">OK</button>
     <script>
-        const btnOK = document.querySelector('.btn-ok');
-        const body = document.body;
+      const btnOK = document.querySelector(".btn-ok");
+      const body = document.body;
 
-        btnOK.addEventListener('click', function(e){
-            console.log(`Button was clicked`);
-            console.dir(e.target);//btn
-            console.dir(e.currentTarget);//btn
-            console.dir(this)//btnOK
-        }, true)
+      btnOK.addEventListener(
+        "click",
+        function (e) {
+          console.log(`Button was clicked`);
+          console.dir(e.target); //btn
+          console.dir(e.currentTarget); //btn
+          console.dir(this); //btnOK
+        },
+        true,
+      );
 
-        body.addEventListener('click', (e)=>{
-            console.log(`Body was clicked`);
-            console.dir(e.target);//btn - the element that fired the event
-            console.dir(e.currentTarget);//body - the x.addEventListener thingy
-            console.dir(this)//global===window
-        } , true)
+      body.addEventListener(
+        "click",
+        (e) => {
+          console.log(`Body was clicked`);
+          console.dir(e.target); //btn - the element that fired the event
+          console.dir(e.currentTarget); //body - the x.addEventListener thingy
+          console.dir(this); //global===window
+        },
+        true,
+      );
     </script>
-</body>
+  </body>
 </html>

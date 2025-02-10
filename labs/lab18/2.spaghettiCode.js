@@ -1,40 +1,40 @@
-const handleError = err=>{
-    console.error(`Error: ${err}`)
+const handleError = (err) => {
+  console.error(`Error: ${err}`);
 };
 
-const prepareDinner = ()=>{
-    console.log(`prepareDinner will take 2000ms`);
-    setTimeout(() => {
-        // do work on prepare dinner
-        const dinner = 'pizza'
-        const success = true;
+const prepareDinner = () => {
+  console.log(`prepareDinner will take 2000ms`);
+  setTimeout(() => {
+    // do work on prepare dinner
+    const dinner = "pizza";
+    const success = true;
 
-        if(success){
-            console.log(`${dinner} is prepared!`);
-            eatDinner(dinner);
-        }else{
-            handleError(`Can not buy dinner!`);
-        }
-    }, 2000);
+    if (success) {
+      console.log(`${dinner} is prepared!`);
+      eatDinner(dinner);
+    } else {
+      handleError(`Can not buy dinner!`);
+    }
+  }, 2000);
 };
 
-const eatDinner = (dinner)=>{
-    console.log(`eatDinner will take 500ms`);
-    setTimeout(() => {
-        // do work on eat dinner
-        const success = true;
+const eatDinner = (dinner) => {
+  console.log(`eatDinner will take 500ms`);
+  setTimeout(() => {
+    // do work on eat dinner
+    const success = true;
 
-        if(success){
-            console.log(`${dinner} is eaten!`);
-            goToBed(`Sweet Dreams after ${dinner} `)
-        }else{
-            handleError(`Can not eat dinner!`);
-        }
-    }, 500);
+    if (success) {
+      console.log(`${dinner} is eaten!`);
+      goToBed(`Sweet Dreams after ${dinner} `);
+    } else {
+      handleError(`Can not eat dinner!`);
+    }
+  }, 500);
 };
 
-const goToBed = (msg)=>{
-    console.log(`${msg}`);
+const goToBed = (msg) => {
+  console.log(`${msg}`);
 };
 
 prepareDinner();

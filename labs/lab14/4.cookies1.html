@@ -1,50 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookies</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        
+      function readCookie(name) {
+        // get all cookies
+        let cookies = document.cookie;
 
-        function readCookie(name) {
-            // get all cookies
-            let cookies = document.cookie;
+        // check if we have ${name} cookie set, and get its value (note the use of lookahed):
+        // see regex explained here: https://regex101.com/r/0pOjkH/7
+        let pattern = `${name}=(.+?)(?:;|$)`;
+        let re = new RegExp(pattern, "i");
 
-            // check if we have ${name} cookie set, and get its value (note the use of lookahed):
-            // see regex explained here: https://regex101.com/r/0pOjkH/7
-            let pattern = `${name}=(.+?)(?:;|$)`;
-            let re = new RegExp(pattern, 'i');
-
-            let match = cookies.match(re);
-            if (match) {
-                return match[1]; // return the 1st capture group, i.e. the cookie value
-            } else {
-                return false;
-            }
+        let match = cookies.match(re);
+        if (match) {
+          return match[1]; // return the 1st capture group, i.e. the cookie value
+        } else {
+          return false;
         }
+      }
 
-        setCookie(color, '#FF0000');
-        let color = readCookie('color');
+      setCookie(color, "#FF0000");
+      let color = readCookie("color");
 
-        // let color = 5;
-        function setCookie(name, value) {
-            // to set Expire Time 1 minute after current time:
-            let now = new Date();
-            now.setMinutes(now.getMinutes() + 1);
+      // let color = 5;
+      function setCookie(name, value) {
+        // to set Expire Time 1 minute after current time:
+        let now = new Date();
+        now.setMinutes(now.getMinutes() + 1);
 
-            // set a cooke:
-            document.cookie = `${name}=${value}; Expires=${now.toGMTString()}; Path=/`;
-        }
-        
+        // set a cooke:
+        document.cookie = `${name}=${value}; Expires=${now.toGMTString()}; Path=/`;
+      }
 
-        console.log(color);
-        
+      console.log(color);
     </script>
-</body>
-
+  </body>
 </html>

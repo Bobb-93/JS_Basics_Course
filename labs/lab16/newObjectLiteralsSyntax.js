@@ -1,6 +1,6 @@
 /* ------------------------ Shorthand property names ------------------------ */
 
-let userName = 'pesho';
+let userName = "pesho";
 let userAge = 23;
 
 // // before ES6
@@ -10,7 +10,7 @@ let userAge = 23;
 // // }
 
 // // after ES6
-let userData = {userName, userAge};
+let userData = { userName, userAge };
 console.log(userData);
 
 /* --------------------------- Method definitions --------------------------- */
@@ -24,12 +24,10 @@ console.log(userData);
 
 // after ES6
 let p1 = {
-    name: 'Pesho',
-    greet(){
-        console.log(`Hi, I'm ${this.name}`);
-    }
-}
+  name: "Pesho",
+  greet() {
+    console.log(`Hi, I'm ${this.name}`);
+  },
+};
 
 console.log(p1);
-
-

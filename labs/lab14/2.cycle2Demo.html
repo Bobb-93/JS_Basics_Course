@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cycle2 demo</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
 
     <style>
-        .cycle-slideshow {
-            width: 600px;
-            height: 300px;
-            border: 2px solid #999;
-        }
+      .cycle-slideshow {
+        width: 600px;
+        height: 300px;
+        border: 2px solid #999;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--
     // За да включите jQuery и Cycle2 плъгина, трябва да добавите следните два скрипта в HTML файла на вашия уеб сайт:
     // включване на jQuery:
@@ -27,22 +29,28 @@
     // включване на Cycle2 плъгина:
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
     -->
-    <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="1000" data-cycle-timeout="1000"
-        data-cycle-pause-on-hover="true" data-cycle-prev="#prev" data-cycle-next="#next">
-        <img src="https://picsum.photos/id/1/600/300">
-        <img src="https://picsum.photos/id/20/600/300">
-        <img src="https://picsum.photos/id/50/600/300">
+    <div
+      class="cycle-slideshow"
+      data-cycle-fx="scrollHorz"
+      data-cycle-speed="1000"
+      data-cycle-timeout="1000"
+      data-cycle-pause-on-hover="true"
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+    >
+      <img src="https://picsum.photos/id/1/600/300" />
+      <img src="https://picsum.photos/id/20/600/300" />
+      <img src="https://picsum.photos/id/50/600/300" />
     </div>
     <div>
-        <a href=# id="prev">Prev</a>
-        <a href=# id="next">Next</a>
+      <a href="#" id="prev">Prev</a>
+      <a href="#" id="next">Next</a>
     </div>
 
     <script>
-        $(document).ready(function () {
-            $('.cycle-slideshow').cycle();
-        });
+      $(document).ready(function () {
+        $(".cycle-slideshow").cycle();
+      });
     </script>
-</body>
-
+  </body>
 </html>

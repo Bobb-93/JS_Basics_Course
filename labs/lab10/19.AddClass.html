@@ -1,33 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        .bg-red{
-            background-color: red;
-        }
-        #test{
-            width: 10em;
-            height: 10em;
-        }
+      .bg-red {
+        background-color: red;
+      }
+      #test {
+        width: 10em;
+        height: 10em;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="test" class="undefined">Test</div>
     <script>
-        const element = document.getElementById("test");
+      const element = document.getElementById("test");
 
-        function addClass(element, className) {
-            if (className === undefined) {
-                throw new Error("Missing class name!");
-            }
-            element.className += `${className}`;
+      function addClass(element, className) {
+        if (className === undefined) {
+          throw new Error("Missing class name!");
         }
+        element.className += `${className}`;
+      }
 
-        try {
-            addClass(element, "bg-red");
-        } catch (e) {
-            console.log(e.message);
-        }
+      try {
+        addClass(element, "bg-red");
+      } catch (e) {
+        console.log(e.message);
+      }
     </script>
-</body>
+  </body>
 </html>

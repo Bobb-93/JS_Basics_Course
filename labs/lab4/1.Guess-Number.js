@@ -17,8 +17,8 @@ console.log(`userNumber: ${userNumber}`);
 //     console.log(`new userNumber: ${userNumber}`);
 // }
 
-do{
-    // Потребителя "въвежда" число:
-    userNumber = Math.round(Math.random() * 10);
-    console.log(`userNumber: ${userNumber}`);
-} while(userNumber != machineNumber)
+do {
+  // Потребителя "въвежда" число:
+  userNumber = Math.round(Math.random() * 10);
+  console.log(`userNumber: ${userNumber}`);
+} while (userNumber != machineNumber);

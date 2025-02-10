@@ -5,9 +5,9 @@ let weight = 125;
 //let BMI = weight/(height*height);
 
 //втори начин
-// let BMI = weight/(height**2); 
+// let BMI = weight/(height**2);
 
 // но можем и без скоби заради приоритета на операциите
-let BMI = weight/height**2;
+let BMI = weight / height ** 2;
 
 console.log(`BMI = ${BMI}`);

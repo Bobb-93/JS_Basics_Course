@@ -1,9 +1,9 @@
-let input = [1,2,3,4];
+let input = [1, 2, 3, 4];
 
-let output = input.reduce( (acc, curr)=> {
-	console.log(acc,curr)
-	return acc+curr;
-} );
+let output = input.reduce((acc, curr) => {
+  console.log(acc, curr);
+  return acc + curr;
+});
 
 console.log(`output: ${output}`);
 
@@ -12,4 +12,3 @@ console.log(`output: ${output}`);
 // 3 3
 // 6 4
 // output: 10
-

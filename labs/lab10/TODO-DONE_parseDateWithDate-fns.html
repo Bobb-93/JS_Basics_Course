@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/date-fns@latest"></script>
-</head>
-<body>
+  </head>
+  <body>
     <script>
       const dateString = "03-03-1990";
       const formatString = "dd-MM-yyyy";
-      const parsedDate = dateFns.parse(dateString, formatString, new Date() );
+      const parsedDate = dateFns.parse(dateString, formatString, new Date());
 
       console.log(parsedDate); // Outputs the parsed Date object
     </script>
-</body>
+  </body>
 </html>

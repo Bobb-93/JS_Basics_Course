@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Set Inline Element Style</title>
-</head>
+  </head>
 
-<body>
-    <p class="test" style="color: aqua; font-size: 2em;">Paragraph 1</p>
+  <body>
+    <p class="test" style="color: aqua; font-size: 2em">Paragraph 1</p>
     <button>Change P styling</button>
 
     <script>
-        const pNode = document.querySelector(".test");
-        const button = document.querySelector('button');
+      const pNode = document.querySelector(".test");
+      const button = document.querySelector("button");
 
-        button.addEventListener('click', function () {
-            // set new value for color:
-            pNode.style.color = "red"
+      button.addEventListener("click", function () {
+        // set new value for color:
+        pNode.style.color = "red";
 
-            // set value for border:
-            pNode.style.border = "5px solid #667"
-        })
+        // set value for border:
+        pNode.style.border = "5px solid #667";
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,11 +1,11 @@
-let numbers = [1,2,3,4];
+let numbers = [1, 2, 3, 4];
 
-for (const num of numbers){
-    console.log(num);
+for (const num of numbers) {
+  console.log(num);
 }
 
-const str = 'abc'
+const str = "abc";
 
-for(const l of str){
-    console.log(l);
+for (const l of str) {
+  console.log(l);
 }

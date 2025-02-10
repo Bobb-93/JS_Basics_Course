@@ -3,11 +3,11 @@ var stopCounterNode = document.querySelector(".stopCounter");
 var count = 1;
 
 function doCounting() {
-	counterNode.innerHTML = count++;
+  counterNode.innerHTML = count++;
 }
 
 function stopCounting() {
-	clearInterval(counterID);
+  clearInterval(counterID);
 }
 
 stopCounterNode.addEventListener("click", stopCounting);

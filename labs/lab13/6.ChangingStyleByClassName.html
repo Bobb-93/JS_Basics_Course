@@ -1,49 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Changing Style By Class</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing Style By Class</title>
     <style>
-        .box {
-            width: 7em;
-            height: 7em;
-            text-align: center;
-            line-height: 7em;
-            vertical-align: middle;
-            color: white;
-        }
+      .box {
+        width: 7em;
+        height: 7em;
+        text-align: center;
+        line-height: 7em;
+        vertical-align: middle;
+        color: white;
+      }
 
-        .style1 {
-            background: purple;
-        }
+      .style1 {
+        background: purple;
+      }
 
-        .style2 {
-            border-radius: 100%;
-            background: blue;
-        }
+      .style2 {
+        border-radius: 100%;
+        background: blue;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <button onclick="applyStyle('box style1');">apply style1</button>
     <button onclick="applyStyle('box style2');">apply style2</button>
     <button onclick="removeStyle();">remove style</button>
     <p>Paragraph 1</p>
 
     <script>
-        var pNode = document.querySelector("p");
+      var pNode = document.querySelector("p");
 
-        function applyStyle(className) {
-            pNode.className = className;
-        }
+      function applyStyle(className) {
+        pNode.className = className;
+      }
 
-        function removeStyle() {
-            pNode.className = "";
-        }
-
+      function removeStyle() {
+        pNode.className = "";
+      }
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,27 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Heading</h2>
     <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
+      <li>Item 1</li>
+      <li>Item 2</li>
     </ul>
     <script>
-        const liNodes = document.getElementsByTagName('li');
+      const liNodes = document.getElementsByTagName("li");
 
-        for (let i = 0; i < liNodes.length; i++) {
-            console.log(liNodes[i].innerHTML);
-        }
-        console.log(liNodes);
-        
+      for (let i = 0; i < liNodes.length; i++) {
+        console.log(liNodes[i].innerHTML);
+      }
+      console.log(liNodes);
     </script>
-</body>
-
+  </body>
 </html>

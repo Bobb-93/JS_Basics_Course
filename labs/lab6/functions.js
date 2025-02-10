@@ -14,7 +14,6 @@
 //         x: 0x123: 1
 // greetUser: 0x124:  010101010010101010101
 
-
 // Function Expression
 // let greetUser = function(userName) {
 //     // let userName='Pesho'
@@ -24,10 +23,8 @@
 //     console.log('*'.repeat(30));
 // };
 
-
 // greetUser('Maria');
 // greetUser('Pesho');
-
 
 /* -------------------------- // Default Parameters ------------------------- */
 // function foo(x,y=100) {
@@ -36,7 +33,6 @@
 // }
 
 // foo(1)
-
 
 /* --------------------------------- Return --------------------------------- */
 // function add(x,y) {
@@ -47,7 +43,6 @@
 
 // console.log( add(2,3) );
 // console.log( add(3,4) + 1 );
-
 
 // function sum(x,y) {
 //     return x+y
@@ -62,9 +57,9 @@
 
 var firstName = "Ada";
 
-function foo(){
-    firstName = "Turing"
-    console.log("1: ", firstName);
+function foo() {
+  firstName = "Turing";
+  console.log("1: ", firstName);
 }
 foo();
 
@@ -73,8 +68,6 @@ console.log("2: ", firstName);
 // RAM (global):
 // firstName:Turing
 // RAM (foo):
-
-
 
 // OUTPUT:
 // 1:Turing

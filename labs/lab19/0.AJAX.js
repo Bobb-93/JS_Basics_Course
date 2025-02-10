@@ -1,17 +1,17 @@
-console.log('sadsadfsdsgrw4');
+console.log("sadsadfsdsgrw4");
 
 var xhr = new XMLHttpRequest();
 // xhr.open('GET', 'https://api.example.com/data', true);
-xhr.open('GET', 'https://api.chucknorris.io/jokes/random', true);
+xhr.open("GET", "https://api.chucknorris.io/jokes/random", true);
 
-xhr.onreadystatechange = function() {
+xhr.onreadystatechange = function () {
   if (xhr.readyState === 4 && xhr.status === 200) {
     var data = JSON.parse(xhr.responseText);
-    console.log('Ala-bala');
-    
+    console.log("Ala-bala");
+
     console.log(data);
   } else if (xhr.readyState === 4) {
-    console.error('Error:', xhr.statusText);
+    console.error("Error:", xhr.statusText);
   }
 };
 

@@ -7,7 +7,6 @@ const jsonData = ` {
 console.log(typeof jsonData);
 console.log(jsonData);
 
-
 // parse json in rder to get the js object:
 const data = JSON.parse(jsonData);
 console.log(typeof data);

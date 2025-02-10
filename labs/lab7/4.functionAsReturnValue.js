@@ -1,10 +1,9 @@
-function foo(){
-    return function(b){
-        console.log(`I'm the returned function ${b}`);
-    }
-    //return 5;
+function foo() {
+  return function (b) {
+    console.log(`I'm the returned function ${b}`);
+  };
+  //return 5;
 }
-
 
 // foo()();
 

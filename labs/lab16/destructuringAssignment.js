@@ -26,15 +26,13 @@
 
 // console.log(x,y);
 
-
 // // after ES6
 // [x,y] = [y,x];
-
 
 // console.log(x); // 2
 // console.log(y); // 1
 
-console.log('**********');
+console.log("**********");
 
 // let data = {
 //     userName:'Ada',
@@ -51,28 +49,25 @@ console.log('**********');
 // console.log(userAge);
 
 // Remove object properties
-let obj = {'a':1,'b':2,'c':3}
+let obj = { a: 1, b: 2, c: 3 };
 
 // 'c' will go into c, and the rest of obj into obj2
-let {c,b,...obj2} = obj
+let { c, b, ...obj2 } = obj;
 
 console.log(c);
 console.log(obj2);
 
 const userData = {
-    id: 1,
-    name:'Ada',
-    age: 23,
-    town:'Sofia'
-}
-
+  id: 1,
+  name: "Ada",
+  age: 23,
+  town: "Sofia",
+};
 
 // let {name, age} = userData;
 
-
-function greet( {name, age} ){
-    console.log(`Hello ${name}. You are ${age} years old!`);
+function greet({ name, age }) {
+  console.log(`Hello ${name}. You are ${age} years old!`);
 }
 
 greet(userData);
-

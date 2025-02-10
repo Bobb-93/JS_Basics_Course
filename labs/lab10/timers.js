@@ -23,8 +23,7 @@
 // // Hello, Pesho (20:30:1001)
 // // After 1 second ((20:30:1002))
 
-
-// use callback in setTimeout with arguments - 
+// use callback in setTimeout with arguments -
 // Variant 1
 // function greet(userName) {
 //     return function() {
@@ -35,7 +34,7 @@
 // console.log(`Start`);
 // setTimeout( greet('Pesho'), 1000);
 
-// use callback in setTimeout with arguments - 
+// use callback in setTimeout with arguments -
 // Variant 2
 // function greet(userName) {
 //     console.log(`Hello, ${userName}`);
@@ -45,7 +44,6 @@
 // setTimeout(() => {
 //     greet('Pesho');
 // }, 1000);
-
 
 // // Remove timer if x > 0
 // console.log(`Start`);
@@ -58,9 +56,6 @@
 //     clearTimeout(helloTimerID)
 // }
 // console.log(`End`);
-
-
-
 
 /* ------------------------------- setInterval ------------------------------ */
 // Task: say Hello 5 times in 1 second
@@ -92,6 +87,3 @@
 //         timeout += timeout;//timeout = timeout * i;
 //     }, timeout);
 // }
-
-
-

@@ -5,18 +5,18 @@ let x = 42;
 let y = new Number(42);
 
 // we can use it the same way:
-console.log( x + 10 ); // 52
-console.log( x.toPrecision(5) ); // "42.000"
+console.log(x + 10); // 52
+console.log(x.toPrecision(5)); // "42.000"
 
-console.log( y + 10 ); // 52
-console.log( y.toPrecision(5) ); // "42.000"
+console.log(y + 10); // 52
+console.log(y.toPrecision(5)); // "42.000"
 
 // but "x" and "y" are different entities with same value
-console.log( x == y )  // true
-console.log( x === y ) // false
+console.log(x == y); // true
+console.log(x === y); // false
 
 let str = "ada";
-console.log( str.toUpperCase() ); // ADA
+console.log(str.toUpperCase()); // ADA
 
-var arr = [1,2,3];
-console.log( arr.reverse() );  // [3, 2, 1]
+var arr = [1, 2, 3];
+console.log(arr.reverse()); // [3, 2, 1]

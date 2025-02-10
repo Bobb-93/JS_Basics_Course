@@ -1,48 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <script>
-        let storage = window.localStorage
+      let storage = window.localStorage;
 
-        // set data
-        storage.setItem('userName', 'Ada')
+      // set data
+      storage.setItem("userName", "Ada");
 
-        console.log(storage);
+      console.log(storage);
 
-        // get item by getItem() method:
-        let userName = storage.getItem('userName')
-        console.log(userName);
+      // get item by getItem() method:
+      let userName = storage.getItem("userName");
+      console.log(userName);
 
+      // get item as property (if key name is a valid JS identifier):
+      userName = storage.userName;
+      console.log(userName);
 
-        // get item as property (if key name is a valid JS identifier):
-        userName = storage.userName;
-        console.log(userName);
+      // remove value by key :
+      // localStorage.removeItem(userName);
+      // storage.removeItem(userName);
+      storage.removeItem("userName");
 
+      console.log(storage);
 
-        // remove value by key :
-        // localStorage.removeItem(userName);
-        // storage.removeItem(userName);
-        storage.removeItem('userName');
+      storage.setItem("userName1", "Ada1");
+      storage.setItem("userName2", "Ada2");
 
-        console.log(storage);
-
-        storage.setItem('userName1', 'Ada1');
-        storage.setItem('userName2', 'Ada2');
-
-
-        for (let i = 0; i < localStorage.length; i++) {
-            let key = localStorage.key(i);
-            console.log(`${key}: ${localStorage.getItem(key)}`);
-        }
+      for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        console.log(`${key}: ${localStorage.getItem(key)}`);
+      }
     </script>
-</body>
-
+  </body>
 </html>

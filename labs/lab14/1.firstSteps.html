@@ -1,71 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <ul id="shoppint-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
     </ul>
 
     <div>
-        <p>Kill him... Kill him now</p>
-        <p class="">Dew it</p>
-        <p class="my-class">Dew it</p>
-
+      <p>Kill him... Kill him now</p>
+      <p class="">Dew it</p>
+      <p class="my-class">Dew it</p>
     </div>
 
     <button class="title">NOW</button>
 
     <script>
+      $(document).ready(function () {
+        // Вашият код тук.
+        $("li:nth-of-type(2)").css("background-color", "#F00");
+        $(".my-class").text("Now");
+        $("body").append("<div>Нов елемент</div>");
+        $("p").css("background-color", "aqua");
 
-        $(document).ready(function () {
-
-            // Вашият код тук.
-            $("li:nth-of-type(2)").css('background-color', '#F00');
-            $('.my-class').text('Now');
-            $('body').append('<div>Нов елемент</div>');
-            $("p").css("background-color", "aqua");
-
-            $("div").css({
-                "background-color": "red",
-                "color": "green"
-            });
-
-            $('.title').click(function (e) {
-                $(this).css('color', 'red');
-            });
-
-            $("li:nth-of-type(2)").on('click', function e() {
-                $(this).css('color', 'orange')
-            });
-
-            $(".title").on("click", function (event) {
-                console.log("Кликнахте върху елемент с клас 'title'");
-                console.log("Тип на събитието: " + event.type);
-                console.log("Координати на курсора: " + event.pageX + ", " + event.pageY);
-            });
-
-            console.log( $('div').find('p'));
-
-            console.log($('div').siblings());
-            console.log($('p.my-class').siblings());
-            //$('div').siblings().css('background-color', 'purple');
-            
-            // $('.selected').prev();
-            // $('.selected').next();
-
+        $("div").css({
+          "background-color": "red",
+          color: "green",
         });
 
-    </script>
-</body>
+        $(".title").click(function (e) {
+          $(this).css("color", "red");
+        });
 
+        $("li:nth-of-type(2)").on("click", function e() {
+          $(this).css("color", "orange");
+        });
+
+        $(".title").on("click", function (event) {
+          console.log("Кликнахте върху елемент с клас 'title'");
+          console.log("Тип на събитието: " + event.type);
+          console.log(
+            "Координати на курсора: " + event.pageX + ", " + event.pageY,
+          );
+        });
+
+        console.log($("div").find("p"));
+
+        console.log($("div").siblings());
+        console.log($("p.my-class").siblings());
+        //$('div').siblings().css('background-color', 'purple');
+
+        // $('.selected').prev();
+        // $('.selected').next();
+      });
+    </script>
+  </body>
 </html>

@@ -1,23 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <p id="p1">Paragraph <b>1</b>!</p>
     <!-- just an HTML comment, but it's a node. -->
     <script type="text/javascript">
-        const allNodes = document.body.childNodes;
-        // console.dir(allNodes);
-        for (let i = 0; i < allNodes.length; i++) {
-            const node = allNodes[i];
-            console.log(`nodeName: ${node.nodeName}, nodeType: ${node.nodeType}`);
-        }
+      const allNodes = document.body.childNodes;
+      // console.dir(allNodes);
+      for (let i = 0; i < allNodes.length; i++) {
+        const node = allNodes[i];
+        console.log(`nodeName: ${node.nodeName}, nodeType: ${node.nodeType}`);
+      }
     </script>
-</body>
-
+  </body>
 </html>

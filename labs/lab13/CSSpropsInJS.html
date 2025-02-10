@@ -1,54 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .box{
-            width: 5em;
-            height: 5em;
-        }
-        .red{
-            background-color: #F00;
-        }
-        .blue-circle{
-            background-color: #00F;
-            border-radius: 100%;
-        }
+      .box {
+        width: 5em;
+        height: 5em;
+      }
+      .red {
+        background-color: #f00;
+      }
+      .blue-circle {
+        background-color: #00f;
+        border-radius: 100%;
+      }
     </style>
-</head>
-<body>
-    <div class="box red" style="border:5px solid #000;" ></div>
+  </head>
+  <body>
+    <div class="box red" style="border: 5px solid #000"></div>
 
     <button>Change box</button>
 
     <script>
-        const dom = {
-            btn:document.querySelector('button'),
-            redBox:document.querySelector('.box.red'),
-            testP: document.querySelector('.test')
-        }
-        dom.btn.addEventListener('click', (e)=>{
-            console.log(`Element inline style`);
-            console.dir( dom.redBox.style );
-            console.log(`Element computed style`);
-            console.dir( window.getComputedStyle(dom.redBox) )
+      const dom = {
+        btn: document.querySelector("button"),
+        redBox: document.querySelector(".box.red"),
+        testP: document.querySelector(".test"),
+      };
+      dom.btn.addEventListener("click", (e) => {
+        console.log(`Element inline style`);
+        console.dir(dom.redBox.style);
+        console.log(`Element computed style`);
+        console.dir(window.getComputedStyle(dom.redBox));
 
-            // dom.redBox.style.backgroundColor = 'blue';
-            // dom.redBox.style.borderRadius = '100%';
+        // dom.redBox.style.backgroundColor = 'blue';
+        // dom.redBox.style.borderRadius = '100%';
 
-            // const currentBoxClass = dom.redBox.className;
-            // console.log(`currentBoxClass = ${currentBoxClass}`);
-            // const newBoxClass = 'box blue-circle';//only box remains
-            // dom.redBox.className = newBoxClass;
+        // const currentBoxClass = dom.redBox.className;
+        // console.log(`currentBoxClass = ${currentBoxClass}`);
+        // const newBoxClass = 'box blue-circle';//only box remains
+        // dom.redBox.className = newBoxClass;
 
-            console.dir( dom.redBox.classList );
-            // console.log(dom.redBox.classList.contains('box'));
-            // dom.redBox.classList.remove('red');
-            dom.redBox.classList.toggle('blue-circle');
-
-        })
+        console.dir(dom.redBox.classList);
+        // console.log(dom.redBox.classList.contains('box'));
+        // dom.redBox.classList.remove('red');
+        dom.redBox.classList.toggle("blue-circle");
+      });
     </script>
-</body>
+  </body>
 </html>

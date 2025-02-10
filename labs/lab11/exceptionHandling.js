@@ -19,7 +19,6 @@
 //     }
 // }
 
-
 /* ---------------------------- Custom Exceptions --------------------------- */
 // class DivideByZero extends Error{
 //     constructor(message) {
@@ -30,7 +29,6 @@
 //     };
 // }
 
-
 // function divide(x, y){
 //     if( y === 0 ){
 //         throw ( new DivideByZero() );
@@ -38,7 +36,6 @@
 //         return x/y;
 //     }
 // }
-
 
 // try{
 //     //console.log(x);
@@ -52,7 +49,6 @@
 //     }
 // }
 
-
 /* ----------------------------- Console objects ---------------------------- */
 // console.dir(console);
 // console.warn('Warining')
@@ -65,7 +61,6 @@
 //     console.error(e);
 // }
 
-
 //  console.time("Timer"); // Start the timer with the label "Timer"
 
 // let sum = 0;
@@ -76,24 +71,23 @@
 // console.timeEnd("Timer"); // End the timer and log the elapsed time
 
 /* ----------------------------- Window on error ---------------------------- */
-window.onerror = function(message, source, lineno, colno, error) {
-    console.error(`Message: ${message}`);
-    console.error(`Source: ${source}`);
-    console.error(`Line: ${lineno}`);
-    console.error(`Column: ${colno}`);
-    console.error(`Error object:`);
-    console.dir(error);
+window.onerror = function (message, source, lineno, colno, error) {
+  console.error(`Message: ${message}`);
+  console.error(`Source: ${source}`);
+  console.error(`Line: ${lineno}`);
+  console.error(`Column: ${colno}`);
+  console.error(`Error object:`);
+  console.dir(error);
 
-    // Check if error contains a stack trace
-    if (error && error.stack) {
-        console.log(`Stack trace:\n${error.stack}`);
-    } else {
-        console.log('Stack trace is not available.');
-    }
+  // Check if error contains a stack trace
+  if (error && error.stack) {
+    console.log(`Stack trace:\n${error.stack}`);
+  } else {
+    console.log("Stack trace is not available.");
+  }
 
-    // Prevent the error from showing in the browser console
-    return true;
+  // Prevent the error from showing in the browser console
+  return true;
 };
-
 
 console.log(x);

@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1 id="welcome-msg">Welcome </h1>
+  </head>
+  <body>
+    <h1 id="welcome-msg">Welcome</h1>
     <script>
-        console.log(document);
-        console.dir(document);
+      console.log(document);
+      console.dir(document);
 
-        document.title = "My website";
-        // document.body.style.backgroundColor = "cyan";
-        document.body.style.backgroundColor = "hsl(0, 0%, 15%)";
+      document.title = "My website";
+      // document.body.style.backgroundColor = "cyan";
+      document.body.style.backgroundColor = "hsl(0, 0%, 15%)";
 
-        const userName = "";
-        const welcomeMsg = document.getElementById("welcome-msg");
-        welcomeMsg.textContent += userName === "" ? `Guest.` : `${userName}!`;
+      const userName = "";
+      const welcomeMsg = document.getElementById("welcome-msg");
+      welcomeMsg.textContent += userName === "" ? `Guest.` : `${userName}!`;
     </script>
-</body>
+  </body>
 </html>

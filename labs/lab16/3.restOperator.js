@@ -1,6 +1,6 @@
-function foo(a, b, ...args){
-    // a = 1, b = 2, args = [3,4,5]
-    console.log(args); //"3, 4, 5"
+function foo(a, b, ...args) {
+  // a = 1, b = 2, args = [3,4,5]
+  console.log(args); //"3, 4, 5"
 }
 foo(1, 2, 3, 4, 5);
 

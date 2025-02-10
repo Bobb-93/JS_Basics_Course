@@ -5,5 +5,4 @@ console.dir(Math);
 console.dir(window.navigator);
 console.dir(navigator);
 
-
 console.dir(document);

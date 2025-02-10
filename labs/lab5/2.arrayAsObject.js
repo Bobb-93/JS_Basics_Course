@@ -7,16 +7,16 @@ var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 console.log(`rainbow: ${rainbow}`);
 
 // LENGTH: броят на елементите на масива
-console.log( "\nrainbow.length="+rainbow.length );
+console.log("\nrainbow.length=" + rainbow.length);
 
 // POP(): премахване на последния елемент на масива
 var lastElement = rainbow.pop();
-console.log( `\nLast element: ${lastElement}`);
+console.log(`\nLast element: ${lastElement}`);
 console.log(`rainbow after pop: \n${rainbow}`);
 
 // SHIFT(): премахване на първия елемент на масива
 var firstElement = rainbow.shift();
-console.log( `\nFirst element: ${firstElement}`);
+console.log(`\nFirst element: ${firstElement}`);
 console.log(`rainbow after shift: \n${rainbow}`);
 
 // PUSH(): добавяне на елемент/и в края на масива

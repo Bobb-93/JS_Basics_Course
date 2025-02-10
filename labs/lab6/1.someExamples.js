@@ -1,13 +1,13 @@
-function signOutMsg(){
-    confirm("Прекратяване на сесията?");
+function signOutMsg() {
+  confirm("Прекратяване на сесията?");
 }
 
 signOutMsg();
 
-console.log(5+4);
+console.log(5 + 4);
 
-function sum(x, y){
-    console.log( x + y );
+function sum(x, y) {
+  console.log(x + y);
 }
 
 sum(8, 7);

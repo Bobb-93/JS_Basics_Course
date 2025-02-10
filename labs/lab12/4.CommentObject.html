@@ -1,25 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <p id="p1">Paragraph <b>1</b>!</p>
     <!-- коментар -->
 
     <script type="text/javascript">
+      const childNodes = document.body.childNodes;
+      console.dir(childNodes);
 
-        const childNodes = document.body.childNodes;
-        console.dir(childNodes);
-
-        console.log("The Comment node object:");
-        var commentNode = document.body.childNodes[3];
-        console.dir(commentNode);
+      console.log("The Comment node object:");
+      var commentNode = document.body.childNodes[3];
+      console.dir(commentNode);
     </script>
-</body>
-
+  </body>
 </html>
